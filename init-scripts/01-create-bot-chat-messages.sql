@@ -1,8 +1,8 @@
 -- Create chat_messages_history table if not exists
 CREATE TABLE IF NOT EXISTS chat_messages_history (
-    id CHARACTER(24) PRIMARY KEY NOT NULL,
-    session_id CHARACTER(24) NOT NULL,
-    sender_id CHARACTER(24) NOT NULL,
+    id CHARACTER(14) PRIMARY KEY NOT NULL,
+    session_id CHARACTER(14) NOT NULL,
+    sender_id CHARACTER(14) NOT NULL,
     sender_type TEXT NOT NULL,
     message TEXT NOT NULL,
     created_at BIGINT,
